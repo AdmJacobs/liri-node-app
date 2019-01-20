@@ -3,13 +3,13 @@ require('dotenv').config();
 
 let request = require("request");
 
-const moment = require('moment');
+const moment = require("moment");
 
 const fs = require("fs");
 
 const keys = require("./keys.js");
 
-const Spotify = require("node-spotify-api");
+const Spotify = require('node-spotify-api');
 const spotify = new Spotify(keys.spotify);
 
 let omdb = (keys.omdb);
@@ -45,7 +45,7 @@ userCommand(userInput, userQuery);
 
 function concertThis() {
     console.log(`\n - - - - -\n\nSEARCHING FOR...${userQuery}'s next show...`);
-    request("https://rest.bandsintown.com/artists/" + userQuery + "/events?app_id=" + bandsintown, function (error, response, body) {
+    request("https://rest.bandsintown.com/artists/" + userQuery + "/events?app_id=codingbootcamp" + bandsintown, function (error, response, body) {
         if (!error && response.statusCode === 200) {
             let userBand = JSON.parse(body);
             if (userBand.length > 0) {
@@ -89,7 +89,7 @@ function movieThis() {
     if (!userQuery) {
         userQuery = "mr nobody";
     };
-    request("http://www.omdbapi.com/?t=" + userQuery + "&apikey=71b6fbc1", function (error, response, body) {
+    request("http://www.omdbapi.com/?t=" + userQuery + "&y=plot=short&apikey=trilogy", function (error, response, body) {
         let userMovie = JSON.parse(body);
 
         let ratingsArr = userMovie.Ratings;
