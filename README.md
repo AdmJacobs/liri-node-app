@@ -2,8 +2,8 @@ Liri node app: LIRI is a Language Interpretation and Recognition Interface. LIRI
 
 Contributors: Adam Jacobs
 
-History:
+History: Var's originally used, then changed to let/const. let can be updated and not re-declared.
 
-Credits: 
+Credits: Hat tip to Sarah Chima for her article: https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e
 
 License: This project is licensed under the MIT License.
