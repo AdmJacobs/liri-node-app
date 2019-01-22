@@ -50,7 +50,7 @@ function concertThis() {
             let userBand = JSON.parse(body);
             if (userBand.length > 0) {
                 for (i = 0; i < 1; i++) {
-                    console.log(`\nOh Yeah!  Here you go...\n\nArtist: ${userBand[i].lineup[0]} \nVenue: ${userBand[i].venue.name}\nVenue Location: ${userBand[i].venue.latitude},${userBand[i].venue.longitude}\nVenue City: ${userBand[i].venue.city}, ${userBand[i].venue.country}`)
+                    console.log(`\nOh Yeah! Here you go...\n\nArtist: ${userBand[i].lineup[0]} \nVenue: ${userBand[i].venue.name}\nVenue Location: ${userBand[i].venue.latitude},${userBand[i].venue.longitude}\nVenue City: ${userBand[i].venue.city}, ${userBand[i].venue.country}`)
                     let concertDate = moment(userBand[i].datetime).format("MM/DD/YYYY hh:00 A");
                     console.log(`Date and Time: ${concertDate}\n\n- - - - -`);
                 };
@@ -79,7 +79,7 @@ function spotifyThisSong() {
         let spotifyArr = data.tracks.items;
 
         for (i = 0; i < spotifyArr.length; i++) {
-            console.log(`\nOh Yeah!  Here you go...\n\nArtist: ${data.tracks.items[i].album.artists[0].name} \nSong: ${data.tracks.items[i].name}\nAlbum: ${data.tracks.items[i].album.name}\nSpotify link: ${data.tracks.items[i].external_urls.spotify}\n\n - - - - -`)
+            console.log(`\nOh Yeah! Here you go...\n\nArtist: ${data.tracks.items[i].album.artists[0].name} \nSong: ${data.tracks.items[i].name}\nAlbum: ${data.tracks.items[i].album.name}\nSpotify link: ${data.tracks.items[i].external_urls.spotify}\n\n - - - - -`)
         };
     });
 }
@@ -96,9 +96,9 @@ function movieThis() {
         if (ratingsArr.length > 2) { }
 
         if (!error && response.statusCode === 200) {
-            console.log(`\nOh Yeah! Here you...\n\nTitle: ${userMovie.Title}\nCast: ${userMovie.Actors}\nReleased: ${userMovie.Year}\nIMDb Rating: ${userMovie.imdbRating}\nRotten Tomatoes Rating: ${userMovie.Ratings[1].Value}\nCountry: ${userMovie.Country}\nLanguage: ${userMovie.Language}\nPlot: ${userMovie.Plot}\n\n- - - - -`)
+            console.log(`\nOh Yeah! Here you go...\n\nTitle: ${userMovie.Title}\nCast: ${userMovie.Actors}\nReleased: ${userMovie.Year}\nIMDb Rating: ${userMovie.imdbRating}\nRotten Tomatoes Rating: ${userMovie.Ratings[1].Value}\nCountry: ${userMovie.Country}\nLanguage: ${userMovie.Language}\nPlot: ${userMovie.Plot}\n\n- - - - -`)
         } else {
-            return console.log("Movie able to be found. Error:" + error)
+            return console.log("Movie not able to be found. Error:" + error)
         };
     })
 };
