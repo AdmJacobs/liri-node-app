@@ -19,7 +19,9 @@
   "homepage": "https://github.com/AdmJacobs/liri-node-app#readme",
   "dependencies": {
     "dotenv": "^6.2.0",
+    "exports": "0.0.1",
     "moment": "^2.23.0",
+    "node-spotify-api": "^1.0.7",
     "spotify": "^0.3.0",
     "twit": "^2.2.11"
   }

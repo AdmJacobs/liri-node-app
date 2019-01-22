@@ -93,7 +93,7 @@ function movieThis() {
         let userMovie = JSON.parse(body);
 
         let ratingsArr = userMovie.Ratings;
-        if (ratingsArr.length > 2) {}
+        if (ratingsArr.length > 2) { }
 
         if (!error && response.statusCode === 200) {
             console.log(`\nOh Yeah! Here you...\n\nTitle: ${userMovie.Title}\nCast: ${userMovie.Actors}\nReleased: ${userMovie.Year}\nIMDb Rating: ${userMovie.imdbRating}\nRotten Tomatoes Rating: ${userMovie.Ratings[1].Value}\nCountry: ${userMovie.Country}\nLanguage: ${userMovie.Language}\nPlot: ${userMovie.Plot}\n\n- - - - -`)
