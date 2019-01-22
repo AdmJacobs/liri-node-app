@@ -21,6 +21,8 @@ Functionality:
 
 concertThis: This function takes in the userInput--command and the userQuery--artist and returns the next concert time and date for that artist, location and city.
 
+
+
 spotifyThisSong: This function takes in the userInput and the userQuery and returns the artist, track name, preview link and album title.
 
 movieThis: This function takes the userInput and the userQuery and returns title, case, release date, ratings, country of origin and synopsis.
