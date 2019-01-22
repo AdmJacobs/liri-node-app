@@ -16,22 +16,18 @@ Functionality:
 
 concertThis: This function takes in the userInput--command and the userQuery--artist and returns the next concert time and date for that artist, location and city.
 
-![GitHub Logo](images\Capture1.JPG)
 Format: ![Alt Text](images\Capture1.JPG)
 
 spotifyThisSong: This function takes in the userInput and the userQuery and returns the artist, track name, preview link and album title.
 
-![GitHub Logo](images\Capture2.JPG)
 Format: ![Alt Text](images\Capture2.JPG)
 
 movieThis: This function takes the userInput and the userQuery and returns title, case, release date, ratings, country of origin and synopsis.
 
-![GitHub Logo](images\Capture3.JPG)
 Format: ![Alt Text](images\Capture3.JPG)
 
 doThis: This function randomily selects one of the functions and searches for it.
 
-![GitHub Logo](images\Capture4.JPG)
 Format: ![Alt Text](images\Capture4.JPG)
 
 Credits: Hat tip to Sarah Chima for her article: https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e
