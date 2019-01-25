@@ -9,8 +9,9 @@ const fs = require("fs");
 
 const keys = require("./keys.js");
 
-const Spotify = require('node-spotify-api');
-const spotify = new Spotify(keys.spotify);
+const Spotify = require ('node-spotify-api');
+
+const spotify = new Spotify (keys.spotifyThisSong);
 
 let omdb = (keys.omdb);
 let bandsintown = (keys.bandsintown);
